@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".modules.DetailActivity">
+
+    <!-- Hotel Image -->
+
+    <!-- Hotel Name -->
+
+    <!-- Hotel Location -->
+    <ImageView
+        android:id="@+id/hotelDetailImage"
+        android:layout_width="415dp"
+        android:layout_height="424dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sigiriya_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Hotel Description -->
+
+    <TextView
+        android:id="@+id/hotelDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:gravity="center"
+        android:text="Sigiriya"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hotelDetailImage" />
+
+    <TextView
+        android:id="@+id/hotelDetailLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Dambulla"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotelDetailName" />
+
+    <TextView
+        android:id="@+id/hotelDetailDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Sigiriya, also known as Lion Rock, is a stunning ancient fortress and UNESCO World Heritage site located in the heart of Sri Lanka. Rising majestically from the flat plains, this 200-meter-high rock formation offers panoramic views, lush gardens, and intricate frescoes, showcasing the rich cultural and historical heritage of the region."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotelDetailImage" />
+
+    <!-- Reviews Button -->
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Reviews"
+        android:backgroundTint="@color/green"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
